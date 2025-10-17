@@ -193,6 +193,11 @@
         height: auto;
     }
 
+    .logo-name {
+        height: auto;
+        max-width: 800px;
+    }
+
     .logo-main {
         display: flex;
         flex-direction: column;
@@ -239,7 +244,43 @@
 /* responsive design */
     @media (max-width: 768px) {
         header, footer {
-            padding: 1%;
+            padding: 1rem;
+        }
+
+        header, .footer-top {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        h4{
+            font-size: 1.25rem;
+        }
+
+        .logo-main {
+            height: 50vh;
+            margin: 2rem;
+        }
+
+        .logo-name {
+            width: 350px;
+            height: auto;
+        }
+
+        .grid-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .grid-content, .grid-full, .grid-three-quarters, .grid-half, .grid-quarter {
+            flex-direction: column;
+        }
+
+        .column-override {
+            flex-direction: initial;
+        }
+
+        .column-img {
+            width: 100%;
+            height: auto;
         }
 
         .grid-full {
