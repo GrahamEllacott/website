@@ -188,9 +188,6 @@
     }
 
 /* logo */
-    .logo {
-        fill: var(--secondary-color)
-    }
 
     .logo-main {
         display: flex;
@@ -198,7 +195,6 @@
         justify-content: center;
         align-items: center;
         margin: 2rem auto;
-        fill: var(--text-color-light);
 
         height: 100vh;
     }
