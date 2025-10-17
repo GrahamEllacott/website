@@ -242,7 +242,7 @@
     }
 
 /* responsive design */
-    @media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
         header, footer {
             padding: 1rem;
         }
@@ -298,4 +298,4 @@
         .grid-quarter {
             grid-column: auto / span 2;
         }
-    }
+}
