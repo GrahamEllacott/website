@@ -223,6 +223,11 @@
         text-align: left;
     }
 
+    footer p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
 /* nice animations */
     nav a {
         transition: all 0.5s ease-in-out;
@@ -242,14 +247,16 @@
     }
 
 /* responsive design */
-@media only screen and (max-width: 600px) {
-        header, footer {
-            padding: 1rem;
-        }
-
-        header, .footer-top {
+@media screen and (max-width: 900px) {
+        header {
             flex-direction: column;
             gap: 1rem;
+        }
+
+        header nav ul {
+            display: flex;
+            text-align: space-around;
+            gap: 3rem;
         }
 
         h1 {
@@ -266,6 +273,40 @@
 
         h4{
             font-size: 1.25rem;
+        }
+
+        .footer-top {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-top nav {
+            display: none;
+        }
+
+        .logo-main {
+            height: 80vh;
+            margin: 2rem;
+        }
+
+        .logo-name {
+            width: 600px;
+            height: auto;
+        }
+    
+}
+@media screen and (max-width: 600px) {
+        header, footer {
+            padding: 1rem;
+        }
+
+        header, .footer-top {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .mobile-no-display {
+            display: none;
         }
 
         .logo-main {
