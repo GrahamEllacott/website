@@ -2,11 +2,11 @@
 
 /* color scheme */
     :root {
-        --background-color: #F2EAD7;
-        --text-color: #4E3C35;
+        --background-color: #f3eddf;
+        --text-color: #241b18;
         --text-color-light: #966C6C;
         --primary-color: #2CC2C7;
-        --secondary-color: #ABFFEA;
+        --secondary-color: #d3fff4;
         --accent-color: #FF8665;
         --grid-color: #F9B99F;
     }
@@ -126,7 +126,7 @@
 
     .bkg-secondary {
         background: var(--secondary-color);
-        color: var(--text-color-light);
+        color: var(--text-color);
     }
 
     .bkg-accent {
